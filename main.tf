@@ -4,7 +4,7 @@ provider "aws" {
 
 provider "cloudflare" {
   #Cloudflare email saved in $CLOUDFLARE_EMAIL
-  email = var.CLOUDFLARE_EMAIL
+  # email = var.CLOUDFLARE_EMAIL
   #Cloudflare api token saved in $CLOUDFLARE_API_TOKEN
   
 }
