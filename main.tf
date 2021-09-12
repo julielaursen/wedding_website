@@ -1,21 +1,21 @@
-terraform {
-  required_providers {
-       aws = {
-         source = "hashicorp/aws"
-       }
-       random ={
-         source = "hashicorp/random"
-       }
-  }
-}
+#terraform {
+ # required_providers {
+ #      aws = {
+ #        source = "hashicorp/aws"
+ #      }
+ #      random ={
+ #        source = "hashicorp/random"
+ #      }
+ # }
+#}
 
-backend "remote" {
-  organizations = "Julie-Laursen"
-}
+#backend "remote" {
+#  organizations = "Julie-Laursen"
+#}
 
-workspaces {
-  name = "wedding_website"
-}
+#workspaces {
+ # name = "wedding_website"
+#}
 
 provider "aws" {
   region = var.aws_region
