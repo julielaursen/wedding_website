@@ -84,6 +84,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{secrets.AWSACCESSKEYID}}
           AWS_SECRET_ACCESS_KEY: ${{secrets.AWSSECRETACCESSKEY}}
           AWS_DEFUALT_REGION: 'us-east-1'
+          CLOUDFLARE_API_TOKEN: ${{secrets.CLOUDFLARE_API_TOKEN}}
 
       # On push to main, build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
