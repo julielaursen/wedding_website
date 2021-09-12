@@ -5,6 +5,7 @@ provider "aws" {
 provider "cloudflare" {
   #Cloudflare email saved in $CLOUDFLARE_EMAIL
   #Cloudflare api token saved in $CLOUDFLARE_API_TOKEN
+  CLOUDFLARE_API_TOKEN=var.CLOUDFLARE_API_TOKEN
 }
 
 resource "aws_s3_bucket" "site" {
