@@ -78,11 +78,11 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -var-file=terraform.tfvars
+      run: terraform plan 
       env:
           ENV_NAME: 'prod'
-          AWS_ACCESS_KEY_ID: ${{secrets.AwsAccessKeyId}}
-          AWS_SECRET_ACCESS_KEY: ${{secrets.AwsSecretAccesKey}}
+          AWS_ACCESS_KEY_ID: ${{secrets.AWSACCESSKEYID}}
+          AWS_SECRET_ACCESS_KEY: ${{secrets.AWSSECRETACCESSKEY}}
           AWS_DEFUALT_REGION: 'us-east-1'
 
       # On push to main, build or change infrastructure according to Terraform configuration files
