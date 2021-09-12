@@ -18,7 +18,7 @@
 #}
 
 provider "aws" {
-  source = "hashicorp/aws"
+  #source = "hashicorp/aws" Error: Reserved argument name in provider block
   region = var.aws_region
   #aws_access_key_id = var.aws_access_key_id
   #aws_secret_key = var.aws_secret_key
