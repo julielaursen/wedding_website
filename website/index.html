@@ -1,318 +1,359 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Terramino</title>
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-        }
-
-        body {
-            /* background-image: url("https://raw.githubusercontent.com/hashicorp/learn-terramino/main/assets/background.png"); */
-            background-image: url("https://raw.githubusercontent.com/tr0njavolta/learn-terraform-circleci/master/assets/background.png");
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif
-        }
-
-        h1 {
-            font-family: Impact, Charcoal, sans-serif
-        }
-
-        canvas {
-            border: 1px solid white;
-        }
-
-        .container {
-            position: relative;
-            margin: 0 auto;
-        }
-
-        .content {
-            position: relative;
-            left: 0;
-            top: 0;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Julie & Lawrence</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-
-<body>
+<body id="top">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#instagram">Instagram</a></li>
+                            <li><a href="#engagement">Engagement</a></li>
+                            <li><a href="#gifts">Registry</a></li>
+                            <li><a href="#FAQ">FAQ</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
     <div class="container">
-        <div class="content">
-            <h1>Terramino</h1>
-            <p>Use left and right arrow keys to move blocks.<br />Use up arrow key to flip block.</p>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <!--<h1>Julie & Lawrence</h1>-->
+                    <img src="img/logo-lg.png">
+                    <!--<p class="intro">Julie & Lawrence</p>-->
+                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                </div>
+            </div>
         </div>
-        <div class="content">
-            <canvas width="320" height="640" id="game"></canvas>
+        <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
+                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
+            <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
-    <script>
-        // https://tetris.fandom.com/wiki/Tetris_Guideline
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+</section>
 
-        // get a random integer between the range of [min,max]
-        // @see https://stackoverflow.com/a/1527820/2124254
-        function getRandomInt(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
+<section id="invitation" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>We are getting hitched</h3>
+                <p>The date is 4<sup>th</sup> of September '22 and we would like you to be a part of
+                    it.</p>
+                <div class="share-bar"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
+<section class="location sectino-padding" id="location">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Location</h3>
+                <p>
+                    We're getting married at Star Hill Ranch in Bee Caves, TX.
+                </p>
+            </div>
+        </div>
+  
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                </a>
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-xs-12 section-border section-padding">
+            </div>
+        </div>-->
+    </div>
 
-        // generate a new tetromino sequence
-        // @see https://tetris.fandom.com/wiki/Random_Generator
-        function generateSequence() {
-            const sequence = ["I", "J", "L", "O", "S", "T", "Z"];
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">What's the dress code?!</h3>
+                    <h5>Ceremony <span class="time">4PM - 5PM</span></h5>
+                    <p>
+                        <strong>Sunday Best</strong>
+                        <br>
+                        We ask that you wear something nice that looks good in photos! We'd prefer
+                        no logo shirts, crop tops or running shoes. 
+                        Keep the weather in mind- we don't recommend wool or heavy clothing. 
+                    </p>
+                    <h5>Reception <span class="time">7PM - 12AM</span></h5>
+                    <p>
+                        <strong>Dance Wear Encouraged</strong>
+                        <br>
+                        We'll be dancing the night away so we highly recommend either dancing shoes or cowboy boots.
+                        Ladies, feel free to bring an extra pair of shoes if you want to change from sandals/heels to 
+                        dance shoes. We will have room to change if needed. 
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
-            while (sequence.length) {
-                const rand = getRandomInt(0, sequence.length - 1);
-                const name = sequence.splice(rand, 1)[0];
-                tetrominoSequence.push(name);
-            }
-        }
+</section>
 
-        // get the next tetromino in the sequence
-        function getNextTetromino() {
-            if (tetrominoSequence.length === 0) {
-                generateSequence();
-            }
+<section id="instagram" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>A picture is worth a thousand words!</h3>
+                <p>Help us capture the moment, tag your photos with the hashtag
+                    <a href="https://instagram.com/explore/tags/julielawrence" target="_blank">#JulieLawrence</a>
+                </p>
+            </div>
+        </div>
+        <div class="row section-border wp7">
+            <div class="col-md-4 col-md-offset-4">
+                <!--image here-->
+            </div>
+        </div>
+    </div>
+</section>
 
-            const name = tetrominoSequence.pop();
-            const matrix = tetrominos[name];
+<section id="engagement" class="section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Engagement Pics</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <!--images here-->>
+                    </div>
+                </a>
+            </div>     
+        </div>
+    </div>
 
-            // I and O start centered, all others start in left-middle
-            const col = playfield[0].length / 2 - Math.ceil(matrix[0].length / 2);
+<section id="gifts" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Our registry is here:</h3>
+                    <p>TBD</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            // I starts on row 21 (-1), all others start on row 22 (-2)
-            const row = name === "I" ? -1 : -2;
+<section id="FAQ" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>FAQ</h3>
+                <p>Are children allowed?</a>
+                </p>
+                <p>What's your COVID-19 policy?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+  
+</section>
 
-            return {
-                name: name, // name of the piece (L, O, etc.)
-                matrix: matrix, // the current rotation matrix
-                row: row, // current row (starts offscreen)
-                col: col // current col
-            };
-        }
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>How do I get there?</h3>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Star Hill Ranch</h5>
+                            <p>Bee Caves, TX</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                                map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        // rotate an NxN matrix 90deg
-        // @see https://codereview.stackexchange.com/a/186834
-        function rotate(matrix) {
-            const N = matrix.length - 1;
-            const result = matrix.map((row, i) =>
-                row.map((val, j) => matrix[N - j][i])
-            );
+<section class="rsvp text-center" id="rsvp">
 
-            return result;
-        }
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Thank you!</h3>
+                        <p>We are glad to see you join us on our big day.</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
-        // check to see if the new matrix/row/col is valid
-        function isValidMove(matrix, cellRow, cellCol) {
-            for (let row = 0; row < matrix.length; row++) {
-                for (let col = 0; col < matrix[row].length; col++) {
-                    if (
-                        matrix[row][col] &&
-                        // outside the game bounds
-                        (cellCol + col < 0 ||
-                            cellCol + col >= playfield[0].length ||
-                            cellRow + row >= playfield.length ||
-                            // collides with another piece
-                            playfield[cellRow + row][cellCol + col])
-                    ) {
-                        return false;
-                    }
-                }
-            }
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>What are you waiting for?</h3>
+                <p>We would greatly appreciate if you could RSVP as soon as possible</p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Your email"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Your name"
+                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                                                  max="4"
+                                                                  placeholder="Significant Other"
+                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                class="" min="0"
+                                                                placeholder="Invite code"
+                                                                required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Yes,
+                        that's me!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-            return true;
-        }
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <p>Crafted by Julie with lots of <span class="fa fa-heart pulse2"></span> for Lawrence</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
-        // place the tetromino on the playfield
-        function placeTetromino() {
-            for (let row = 0; row < tetromino.matrix.length; row++) {
-                for (let col = 0; col < tetromino.matrix[row].length; col++) {
-                    if (tetromino.matrix[row][col]) {
-                        // game over if piece has any part offscreen
-                        if (tetromino.row + row < 0) {
-                            return showGameOver();
-                        }
-
-                        playfield[tetromino.row + row][tetromino.col + col] =
-                            tetromino.name;
-                    }
-                }
-            }
-
-            // check for line clears starting from the bottom and working our way up
-            for (let row = playfield.length - 1; row >= 0;) {
-                if (playfield[row].every(cell => !!cell)) {
-                    // drop every row above this one
-                    for (let r = row; r >= 0; r--) {
-                        playfield[r] = playfield[r - 1];
-                    }
-                } else {
-                    row--;
-                }
-            }
-
-            tetromino = getNextTetromino();
-        }
-
-        // show the game over screen
-        function showGameOver() {
-            cancelAnimationFrame(rAF);
-            gameOver = true;
-
-            context.fillStyle = "black";
-            context.globalAlpha = 0.75;
-            context.fillRect(0, canvas.height / 2 - 30, canvas.width, 60);
-
-            context.globalAlpha = 1;
-            context.fillStyle = "white";
-            context.font = "36px monospace";
-            context.textAlign = "center";
-            context.textBaseline = "middle";
-            context.fillText("GAME OVER!", canvas.width / 2, canvas.height / 2);
-        }
-
-        const canvas = document.getElementById("game");
-        const context = canvas.getContext("2d");
-        const grid = 32;
-        const tetrominoSequence = [];
-
-        // keep track of what is in every cell of the game using a 2d array
-        // tetris playfield is 10x20, with a few rows offscreen
-        const playfield = [];
-
-        // populate the empty state
-        for (let row = -2; row < 20; row++) {
-            playfield[row] = [];
-
-            for (let col = 0; col < 10; col++) {
-                playfield[row][col] = 0;
-            }
-        }
-
-        // how to draw each tetromino
-        // @see https://tetris.fandom.com/wiki/SRS
-        const tetrominos = {
-            I: [[0, 0, 0, 0], [1, 1, 1, 1], [0, 0, 0, 0], [0, 0, 0, 0]],
-            J: [[1, 0, 0], [1, 1, 1], [0, 0, 0]],
-            L: [[0, 0, 1], [1, 1, 1], [0, 0, 0]],
-            O: [[1, 1], [1, 1]],
-            S: [[0, 1, 1], [1, 1, 0], [0, 0, 0]],
-            Z: [[1, 1, 0], [0, 1, 1], [0, 0, 0]],
-            T: [[0, 1, 0], [1, 1, 1], [0, 0, 0]]
-        };
-
-        // color of each tetromino
-        const colors = {
-            I: "#623CE4",
-            O: "#7C8797",
-            T: "#00BC7F",
-            S: "#CA2171",
-            Z: "#1563ff",
-            J: "#00ACFF",
-            L: "white"
-        };
-
-        let count = 0;
-        let tetromino = getNextTetromino();
-        let rAF = null; // keep track of the animation frame so we can cancel it
-        let gameOver = false;
-
-        // game loop
-        function loop() {
-            rAF = requestAnimationFrame(loop);
-            context.clearRect(0, 0, canvas.width, canvas.height);
-
-            // draw the playfield
-            for (let row = 0; row < 20; row++) {
-                for (let col = 0; col < 10; col++) {
-                    if (playfield[row][col]) {
-                        const name = playfield[row][col];
-                        context.fillStyle = colors[name];
-
-                        // drawing 1 px smaller than the grid creates a grid effect
-                        context.fillRect(col * grid, row * grid, grid - 1, grid - 1);
-                    }
-                }
-            }
-
-            // draw the active tetromino
-            if (tetromino) {
-                // tetromino falls every 35 frames
-                if (++count > 35) {
-                    tetromino.row++;
-                    count = 0;
-
-                    // place piece if it runs into anything
-                    if (!isValidMove(tetromino.matrix, tetromino.row, tetromino.col)) {
-                        tetromino.row--;
-                        placeTetromino();
-                    }
-                }
-
-                context.fillStyle = colors[tetromino.name];
-
-                for (let row = 0; row < tetromino.matrix.length; row++) {
-                    for (let col = 0; col < tetromino.matrix[row].length; col++) {
-                        if (tetromino.matrix[row][col]) {
-                            // drawing 1 px smaller than the grid creates a grid effect
-                            context.fillRect(
-                                (tetromino.col + col) * grid,
-                                (tetromino.row + row) * grid,
-                                grid - 1,
-                                grid - 1
-                            );
-                        }
-                    }
-                }
-            }
-        }
-
-        // listen to keyboard events to move the active tetromino
-        document.addEventListener("keydown", function (e) {
-            if (gameOver) return;
-
-            // left and right arrow keys (move)
-            if (e.which === 37 || e.which === 39) {
-                const col = e.which === 37 ? tetromino.col - 1 : tetromino.col + 1;
-
-                if (isValidMove(tetromino.matrix, tetromino.row, col)) {
-                    tetromino.col = col;
-                }
-            }
-
-            // up arrow key (rotate)
-            if (e.which === 38) {
-                const matrix = rotate(tetromino.matrix);
-                if (isValidMove(matrix, tetromino.row, tetromino.col)) {
-                    tetromino.matrix = matrix;
-                }
-            }
-
-            // down arrow key (drop)
-            if (e.which === 40) {
-                const row = tetromino.row + 1;
-
-                if (!isValidMove(tetromino.matrix, row, tetromino.col)) {
-                    tetromino.row = row - 1;
-
-                    placeTetromino();
-                    return;
-                }
-
-                tetromino.row = row;
-            }
-        });
-
-        // start the game
-        rAF = requestAnimationFrame(loop);
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+<!-- Google Analytics -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-46465113-4', 'auto');
+    ga('send', 'pageview');
+</script>
 </body>
-
 </html>
