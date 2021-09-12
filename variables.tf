@@ -7,5 +7,7 @@ variable "aws_region" {
 variable "site_domain" {
   type        = string
   description = "The domain name to use for the static site"
+  default = "julielawrence.net"
+
 }
 
