@@ -20,6 +20,7 @@
 provider "aws" {
   #source = "hashicorp/aws" Error: Reserved argument name in provider block
   region = var.aws_region
+  #profile = "profile_name"
   #aws_access_key_id = var.aws_access_key_id
   #aws_secret_key = var.aws_secret_key
 }
@@ -28,8 +29,8 @@ provider "aws" {
 provider "cloudflare" {
   #Cloudflare email saved in $CLOUDFLARE_EMAIL
   # email = var.CLOUDFLARE_EMAIL
+  api_token = var.cloudflare_api_token
   #Cloudflare api token saved in $CLOUDFLARE_API_TOKEN
-  
 }
 
 resource "aws_s3_bucket" "site" {

@@ -8,6 +8,10 @@ variable "site_domain" {
   type        = string
   description = "The domain name to use for the static site"
   default = "julielawrence.net"
-
 }
 
+variable "cloudflare_api_token" {
+  type        = string
+  description = "The cloudflare Api key"
+  default     = null
+}
