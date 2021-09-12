@@ -80,7 +80,7 @@ jobs:
     - name: Terraform Plan
       run: terraform plan -var-file=terraform.tfvars
       env:
-          ENV_NAME: 'development'
+          ENV_NAME: 'prod'
           AWS_ACCESS_KEY_ID: ${{secrets.AwsAccessKeyId}}
           AWS_SECRET_ACCESS_KEY: ${{secrets.AwsSecretAccesKey}}
           AWS_DEFUALT_REGION: 'us-east-1'
