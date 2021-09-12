@@ -69,4 +69,4 @@ resource "cloudflare_record" "www" {
 
   ttl     = 1
   proxied = true
-}c
+}
