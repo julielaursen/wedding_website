@@ -51,12 +51,13 @@ data "cloudflare_zones" "domain" {
   }
 }
 
+
 resource "cloudflare_record" "site_cname"  {
   zone_id = data.cloudflare_zones.domain.zones[0].id
   name    = var.site_domain
   value   = aws_s3_bucket.site.website_endpoint
   type    = "CNAME"
-
+  //allow_overwrite = true
   ttl     = 1
   proxied = true
 }
@@ -66,6 +67,7 @@ resource "cloudflare_record" "www" {
   name    = "www"
   value   = var.site_domain
   type    = "CNAME"
+  //allow_overwrite = true
 
   ttl     = 1
   proxied = true
