@@ -87,8 +87,8 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{secrets.CLOUDFLARE_API_TOKEN}}
     
     - name: Terraform Import
-      run: terraform import
-      
+      run: terraform import d3007ba2bebb930d3ba55bf81e125e1c/d3007ba2bebb930d3ba55bf81e125e1c
+
       # On push to main, build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
     - name: Terraform Apply
