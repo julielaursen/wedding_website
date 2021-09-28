@@ -19,7 +19,12 @@ h3{
 h4{
     font-size:18px
 }
-h5{font-size:15px;color:#3D4351;text-transform:uppercase;font-weight:500
+h5{
+    font-size:15px;
+    color:#3D4351;
+    text-transform:
+    uppercase;font-weight:500;
+    text-align: center;
 }
 .btn{
     font-size:13px;border:solid 2px;-moz-border-radius:40px;-webkit-border-radius:40px;border-radius:40px;display:inline-block;text-transform:uppercase
@@ -126,11 +131,12 @@ section
 .navigation{transition:all 300ms ease-in-out;position:fixed;width:100%;z-index:999}
 .fixed{position:fixed;background-color:rgba(55,36,40,0.88);z-index:999;width:100%}
 header{
-    padding:30px 0;
+    padding:50px 0;
     border-bottom:solid 1px rgba(255,255,255,0.2);
     position:relative;width:1170px;
     margin:0 auto;
-    transition:padding 300ms ease-in-out
+    transition:padding 300ms ease-in-out;
+    background-color:#e8ca6f;
 }
 header a{
     color:#fff;
@@ -168,7 +174,10 @@ header ul.member-actions li a{color:#000000}
 header ul.member-actions li a:hover{color:#e8ca6f}
 header .header-nav{display:inline-block}
 header .member-actions{
-    position:absolute;right:0;top:41px;transition:all 300ms ease-in-out
+    position:absolute;
+    right:2;
+    top:41px;
+    transition:all 300ms ease-in-out
 }
 
 .down-arrow{
