@@ -166,14 +166,23 @@ $(document).ready(function () {
 
 
     /********************** Toggle Map Content **********************/
-    $('#btn-show-map').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
-    });
+    //$('#btn-show-map').click(function () {
+      //  $('#map-content').toggleClass('toggle-map-content');
+      //  $('#btn-show-content').toggleClass('toggle-map-content');
+    //});
     $('#btn-show-content').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
+
+    <script type="text/javascript">
+    var button = document.getElementById('btn-show-map')
+    button.addEventListener('click',hideshow,false);
+
+    function hideshow() {
+        document.getElementById('hidden-div').style.display = 'block'; 
+        this.style.display = 'none'}   
+    </script>
 
     /********************** Add to Calendar **********************/
     var myCalendar = createCalendar({
