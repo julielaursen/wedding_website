@@ -175,14 +175,7 @@ $(document).ready(function () {
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
 
-    <script type="text/javascript">
-    var button = document.getElementById('btn-show-map')
-    button.addEventListener('click',hideshow,false);
-
-    function hideshow() {
-        document.getElementById('hidden-div').style.display = 'block'; 
-        this.style.display = 'none'}   
-    </script>
+    
 
     /********************** Add to Calendar **********************/
     var myCalendar = createCalendar({
@@ -223,11 +216,16 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+        if (MD5($('#invite_code').val()) !== '9408a26261b0199474d46cca6676b81f'
+            && MD5($('#invite_code').val()) !== '9408A26261B0199474D46CCA6676B81F') {
+        //old 271117 code
+        //if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
+          //  && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') 
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxRv5Or2hosfpigbHjjE2oeVSvYiqb0LPPWABWJPJnDneqP4Cxt64H4aK5yx1dw9Z9N-/exec', data)
+            //old version of google sheets
+            //$.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {

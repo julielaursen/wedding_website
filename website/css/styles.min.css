@@ -1,20 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Coneria);
+@import url(https://fonts.googleapis.com/css?family=Allura);
+@import url(https://fonts.googleapis.com/css?family=Ephesis);
 p{
     font-size:15px;
     line-height:29px;
     color:rgba(28,54,83,0.6);
     padding-bottom:10px
 }
+.save-date{
+    font-family: "Coneria";
+}
 h1{
-    font-size:60px
+    font-size:60px;
+    font-family: "Ephesis", sans-serif;
 }
 h2{
     font-size:40px;font-weight:300;color:#3D4351
 }
 h3{
-    color:#3D4351;font-size:18px;font-weight:700;text-transform:uppercase;letter-spacing:3px;line-height:29px
+    color:#3D4351;
+    font-size:18px;
+    font-weight:700;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    line-height:29px
 }
 h4{
     font-size:18px
@@ -43,7 +56,10 @@ h5{
 }
 .btn-fill:hover,.btn-fill:focus{color:#fff;background-color:#d3b56a;border-color:#d3b56a}
 .btn-small{padding:8px 30px}
-.btn-large{padding:15px 40px}
+.btn-large{
+    padding:15px 40px;
+    margin-top: 525px;
+}
 .btn-margin-right{margin-right:20px}
 
 section.intro,section.features-extra,section.rsvp{
@@ -63,7 +79,7 @@ section.features,section.events,section.blog{
 }
 
 a{
-    color:#e8ca6f;-webkit-transition-timing-function:ease;transition-timing-function:ease;-webkit-transition-duration:200ms;transition-duration:200ms;-webkit-transition-property:color, border-color, background-color;transition-property:color, border-color, background-color
+    color:#d3b56a;-webkit-transition-timing-function:ease;transition-timing-function:ease;-webkit-transition-duration:200ms;transition-duration:200ms;-webkit-transition-property:color, border-color, background-color;transition-property:color, border-color, background-color
 }
 a:hover,a:focus{
     color:#d3b56a;text-decoration:none
@@ -132,7 +148,8 @@ section
     transition:all 300ms ease-in-out;
     position:fixed;
     width:100%;
-    z-index:999
+    z-index:999;
+    align-items: stretch;
 }
 .fixed{position:fixed;background-color:rgba(55,36,40,0.88);z-index:999;width:100%}
 header{
@@ -244,13 +261,15 @@ header .member-actions{
 #video-content{width:100%;height:100%;padding-top:100px;position:relative;background:rgba(17,17,17,0.5);text-align:center}#video-content h5{color:#ffffff;font-size:30px;font-weight:300;letter-spacing:10px}
 #video-content p{color:#ffffff}
 #map-canvas{height:500px;width:100%}
+
 #map-content-wrapper{
     position:relative;
     margin-top:-502px;
     margin-bottom:150px;
 }
+
 #map-content{
-    margin-top:20px;
+    margin-top:40px;
     padding:50px 60px;
     background-color:#ffffff;
     -webkit-transition:opacity 0.5s, visibility 0.6s, margin-top 0.5s;

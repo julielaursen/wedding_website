@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allura">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ephesis">
+
 </head>
 <body id="top">
 <section class="hero">
@@ -25,6 +28,8 @@
                             <li><a href="#gifts">Registry</a></li>
                             <li><a href="#FAQ">FAQ</a></li>
                             <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#saveDate">Save the Date</a></li>
+
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Venue</a></li>
@@ -54,15 +59,47 @@
             <div class="col-sm-4 hidden-xs"></div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
+                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>
+            <div class="col-sm-4 hidden-xs"></div>
+        </div>
+    </div>
     <div class="down-arrow floating-arrow"><a href="#intro"><i class="fa fa-angle-down"></i></a></div>
+</section>
+
+
+<h3>We are getting married!</h3>
+
+<section id="saveDate" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 text-center">
+                <div class="save-date">
+                    Mark your calendars:
+                    <a target="_blank" href="https://www.google.com/calendar/event?eid=MGhoa2gyZzFjNWczZGM5cGptcG5qcTFqMzkgMmZsOW9pdnRzcHQ2bWEwaTdtODc2YXY2NzBAZw&ctz=America/Chicago">
+                        <img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                    <!--
+                        THIS LINK GOES TO THE CALENDAR DAY
+                    <a target="_blank" href="https://www.google.com/calendar/embed?src=2fl9oivtspt6ma0i7m876av670@group.calendar.google.com&mode=day&dates=20220904%2F20220904&ctz=America/Chicago&sf=true">
+                        <img src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                    -->             
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="intro" class="section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <h3>We are getting married!</h3>
-                The date is 4<sup>th</sup> of September '22 at Star Hill Ranch and we would like you to be a part of
+            <!--<div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 text-center">-->
+           <div class="col-md-8 col-md-offset-2 text-center">
+                <h1>
+                September 4<sup>th</sup> 2022</span></h1>
+                <br>
+                Our wedding is at Star Hill Ranch and we would like you to be a part of
                     it.   
                 Centered along a historic main street and surrounded by panoramic Hill Country views,
     Star Hill is located just 25 minutes west of downtown Austin in the community of Bee Cave.
@@ -77,9 +114,10 @@
 <section id="map" class="section-padding">
     <div class="text-center">
         <h3>How do I get there?</h3>
-        <p>From the airport/downtown, take Hwy 71 West to Bee Caves, TX</p>
+        <p><a href="https://goo.gl/maps/bJncEYboq9AiANku6"><i class="fa fa-map"></i></a>  From the airport/downtown, take Hwy 71 West to Bee Caves, TX and turn left on Hamilton Pool Rd
+        </p>
     </div>
-    <div id="map-canvas"></div>
+<div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
@@ -91,25 +129,24 @@
                 <div id="map-content" class="pointer-events-auto">
                     <div class="row">
                         <div class="col-md-6">
-                            <h5>Star Hill Ranch</h5>
-                            <p>1500 Hamilton Pool Road, Bee Caves, TX </p>
+                            <h5>15000 Hamilton Pool Rd</h5>
+                            <p>   Bee Caves, TX</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Contact Info</h5>
+                            <p><i class="fa fa-mobile"></i> <a href="tel://5555555555">523-555-5555</a><br>
+                                <i class="fa fa-mobile"></i> <a href="tel://5555555555">512-555-5555</a></p>
                         </div>
                     </div>
                     <div class="row text-center">
                         <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
                             <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
                                 map</a>
-                            <!--script to hide button-->    
-                                <script type="text/javascript">
-                                    var button = document.getElementById('btn-show-map');
-                                    var modal = document.getElementById('map-content');
-                                    button.addEventListener('click',hideshow,false);
-                                
-                                    function hideshow() {
-                                        modal.style.display = 'none';
-                                    }   
-                                    </script>
-                            <!--script to hide button-->        
                         </div>
                     </div>
                 </div>
@@ -117,6 +154,7 @@
         </div>
     </div>
 </section>
+
   
     <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -130,11 +168,12 @@
                         <strong>Sunday Best</strong>
                         <br>
                         We ask that you wear something nice that looks good in photos! We'd prefer
-                        no logo shirts, crop tops or running shoes. 
+                        no logo shirts, crop tops, cargo shorts or running shoes. 
                         Although our venue is both indoor/outdoor, Texas can be hot and humid well into the fall.
-                        Therefore, we don't recommend wool or heavy clothing. 
-                        The venue includes many historic buildings from the 1800s and early 1900s. 
-                        Therefore, vintage clothing, flapper dresses, and western wear would all fit the venue well.
+                        Therefore, we don't recommend wool or heavy clothing. Polo short sleeve shirts, sundresses,
+                        jumpsuits and cocktail dresses all work. The venue includes many historic buildings from the 1800s and early 1900s. 
+                        Vintage clothing, flapper dresses, and western wear would all fit the venue well. 
+                        
                     </p>
                     <h5>Reception <span class="time">7PM - 12AM</span></h5>
                     <p>
@@ -204,6 +243,26 @@
         </div>
     </section>
 
+    <!--
+    <section id="video-bg" class="hidden-sm hidden-xs">
+        <div id="bgndVideo" class="player"
+             data-property="{
+             videoURL:'https://youtu.be/CREupjkG490',
+             containment:'#video-bg',
+             autoPlay:true, 
+             mute:true, 
+             showControls:false, 
+             startAt:05, 
+             stopAt:259, 
+             opacity:1}">
+        </div>
+        <div id="video-content">
+            <h5>Austin,</h5>
+            <p>Texas</p>
+        </div>
+    </section>
+-->
+
 <section id="FAQ" class="section-padding">
     <div class="container">
         <div class="row">
@@ -218,41 +277,65 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
-                <h5>Are children allowed?</h5>
-                    We respectfully wish to keep this an adult only wedding
+                
                 <h5>What's your COVID-19 policy?</h5>
                     We require our guests to be vaccinated or have a doctor's note if unable to get 
                     vaccinated for medical reasons
+                <h5>Are children allowed?</h5>
+                    We respectfully wish to keep this an adult only wedding    
                 <h5>Is the venue BYOB?</h5>
                     No! TABC has strict rules about this. Only bartenders can serve alcohol at this venue.
                     As a bonus, the bartenders love to talk about the history of the venue. 
+                <h5>OPEN BAR...?</h5>
+                    OPEN BAR! We will have beer, wine and champagne. Check out the old saloon 
+                    (circla 1873) which was originally the Bee Cave Post Office & Store or the biergarten
+                    (1850s) relocated from Industry, Texas.
+                <h5>What events are scheduled besides the ceremony and reception?</h5>    
+                    We will have a rehearsal dinner that is invite only. No other events are currently scheduled.
+                <h5>Are gifts required?</h5>
+                    No. We are happy to accept all gifts including a thoughtful card or your favorite cooking recipe (no garlic).    
+                <h5>Is there anything important for me to know as a guest?</h5>
+                    Life changes! If you RSVP but later need to cancel, please inform the bride and groom as early as possible.
+                    Catering and seating is per head and advanced notice allows us to recoup those costs.   
                 <h5>Is there anything important to know about the venue?</h5>
-                </h5>
                     This is very important! Our venue includes many wood buildings that are over 100 years old. Please refrain 
                     from any smoking anywhere near the venue itself. There will be a designated smoking area a short
                     walking distance from the buildings. Also, please refrain from going inside any buildings that are 
                     not designated with a sign in front of them. Buildings not directly involved in the ceremony/reception are 
                     considered private. Also, all decorations and centerpieces are rentals from the venue and must be left at the 
-                    end of the night.
+                    end of the night as they are not favors but rentals.
                 <h5>How is parking?</h5>
                     There should be ample room for parking at the venue.
+                <h5>What will the catering consist of?</h5>
+                    <a href="#contact">Contact Us</a> if you have special dietary needs we need to accomodate. 
+                    Our catering is provided by Verde's mexican restaurant and our entrees are going to be 
+                    chicken or pork with rice or sweet potatoes, grilled vegetables, and appetizers. 
+                    We will also have grilled cheese and grilled peanut butter sandwiches for late night and 
+                    a barista truck in the late afternoon/early evening.  
                 <h5>What activities are on the schedule for the wedding?</h5>
-                    We hope to be one of the most fun weddings you've attended. Please grab a latte from the 
-                        coffee truck when you come in. 
+                    We hope to be one of the most fun weddings you've attended. 
                         Between cocktail hour and the afterparty, part of the schoolhouse building will have tables for 
                         board games.
                         Main street will have cornhole and giant jenga.
-                        The venue itself is a great opportunity. Though we ask that guests do not photograph or video the 
-                        wedding (we have professionals covering that), take as many pictures of yourself as you'd like in 
-                        the saloon, biergarten, or by some of the historic vehicles.
                         Ralph Fisher's photo animal company will be providing beer burros and armadillo racing.
                         Armadillo racing will come with prizes!
                         We will also have an axe-throwing booth!
                         Late Night: Post send-off we will hav a dancing after-hours party with a DJ and catering 
                         by Burro's artisan grilled cheese. Expect a mix of East Coast Swing, West Coast Swing,
                         Two Step and Lindy.
+                <h5>Social Media/Photography</h5> 
+                    The venue itself is a great photo opportunity. Though we ask that guests do not photograph or video the 
+                    wedding (we have professionals covering that), take as many pictures of yourself as you'd like in front of
+                    the historic buildings and vehicles.       
                 <h5>What hotels do you recommend?</h5>
-                    <a href="https://www.sonesta.com/us/texas/bee-cave/sonesta-bee-cave-austin">The Sonesta Hotel</a> is very close to the hotel.
+                    <ul>
+                    <li><a href="https://www.sonesta.com/us/texas/bee-cave/sonesta-bee-cave-austin">The Sonesta Hotel</a> is very close to the hotel.</li>
+                    <li>Marriott Springhill Suites Lakeway</li>
+                    <li>Hampton Inn Lakeway</li>
+                    <li>La Quinta- Lakeway or SW Pkwy & Mopac</li>
+                    <li>Holiday Inn Express Lakeway</li>
+                    <li>Sunset RV Park</li>
+                    </ul>
                 <h5>What's there to do in Bee Caves, TX?</h5>
                     Our venue is a 2 minute drive from the <a href="https://www.hillcountrygalleria.com/">Hill Country Galleria</a>, which includes multiple 
                         restaurants and breweries as well as lots of <a href="https://www.hillcountrygalleria.com/directory/">shopping</a>, Whole Foods, and a Gold's gym.
@@ -293,7 +376,7 @@
                 <h3>RSVP</h3>
                 <p>We would greatly appreciate if you could RSVP as soon as possible</p>
                 <form id="rsvp-form" class="rsvp-form"
-                      action=""
+                      action="https://script.google.com/macros/s/AKfycbxRv5Or2hosfpigbHjjE2oeVSvYiqb0LPPWABWJPJnDneqP4Cxt64H4aK5yx1dw9Z9N/exec"
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
@@ -316,7 +399,7 @@
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
                                                                   max="1"
-                                                                  placeholder="Plus one if asked"
+                                                                  placeholder="Bringing extra people?"
                                                                   required>
                             </div>
                         </div>
@@ -346,8 +429,11 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 text-center">
-                    Contact us at <a href="mailto:philosopherlawr@gmail.com?">Lawrence's email</a> or <a href="mailto:julielaursen1@gmail.com">
+                <h3>CONTACT US</h3>
+                    <b>Contact us</b> at <a href="mailto:philosopherlawr@gmail.com?">Lawrence's email</a> or <a href="mailto:julielaursen1@gmail.com">
                     Julie's email</a>
+                    <br>
+                    <br>
                     <br>
                     <br>
                 </p>
@@ -356,12 +442,14 @@
     </div>
 </section>
 
+
+
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Crafted by Julie for Lawrence</p>
+                <p>Crafted by Julie with <span class="fa fa-heart pulse2"></span> for Lawrence</p>
             </div>
         </div>
     </div>
@@ -397,5 +485,26 @@
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
 </script>
+
+<!--gform-->
+<form class="gform" method="POST" data-email="julielaursen1@gmail.com"
+action= "https://script.google.com/macros/s/AKfycbxRv5Or2hosfpigbHjjE2oeVSvYiqb0LPPWABWJPJnDneqP4Cxt64H4aK5yx1dw9Z9N
+/exec">
+
+</form>
+<!--gform-->
+
+    <!--script to hide button-->    
+    <script type="text/javascript">
+        var button = document.getElementById('btn-show-map');
+        var modal = document.getElementById('map-content');
+        button.addEventListener('click',hideshow,false);
+    
+        function hideshow() {
+            modal.style.display = 'none';
+        }   
+        </script>
+<!--script to hide button-->   
+
 </body>
 </html>
