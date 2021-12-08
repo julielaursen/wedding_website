@@ -7,7 +7,8 @@
 p{
     font-size:15px;
     line-height:29px;
-    color:rgba(28,54,83,0.6);
+    color:#3D4351;
+    font-weight: 500;
     padding-bottom:10px
 }
 .save-date{
@@ -36,23 +37,23 @@ h5{
     font-size:15px;
     color:#3D4351;
     text-transform:
-    uppercase;font-weight:500;
+    uppercase;font-weight:560;
     text-align: center;
 }
 .btn{
     font-size:13px;border:solid 2px;-moz-border-radius:40px;-webkit-border-radius:40px;border-radius:40px;display:inline-block;text-transform:uppercase
 }
 .btn:hover,.btn:focus{
-    color:#fff;border-color:#e8ca6f;background-color:#e8ca6f
+    color:#fff;border-color:#d3b56a;background-color:#d3b56a
 }
 .btn-white{
     font-size:13px;border:solid 2px;-moz-border-radius:40px;-webkit-border-radius:40px;border-radius:40px;display:inline-block;border-color:#fff
 }
 .btn-white:hover,.btn-white:focus{
-    color:#e8ca6f;border-color:#e8ca6f
+    color:#d3b56a;border-color:#d3b56a
 }
 .btn-fill{
-    color:#fff;border:solid 2px #e8ca6f;-moz-border-radius:40px;-webkit-border-radius:40px;border-radius:40px;display:inline-block;text-transform:uppercase;background-color:#e8ca6f
+    color:#fff;border:solid 2px #d3b56a;-moz-border-radius:40px;-webkit-border-radius:40px;border-radius:40px;display:inline-block;text-transform:uppercase;background-color:#d3b56a
 }
 .btn-fill:hover,.btn-fill:focus{color:#fff;background-color:#d3b56a;border-color:#d3b56a}
 .btn-small{padding:8px 30px}
@@ -159,7 +160,7 @@ header{
     width:100%;
     margin: 0p 75px 0 75px;
     transition:padding 300ms ease-in-out;
-    background-color:#e8ca6f;
+    background-color:#d3b56a;
 }
 header a{
     color:#fff;
@@ -176,6 +177,7 @@ header ul.primary-nav{
     margin:0 0 0 75px;
     padding:0;
     color:#0f0e0e;
+    font-weight: 400;
 }
 header ul.primary-nav li{
     display:inline;
@@ -194,7 +196,7 @@ header ul.primary-nav li:last-child a{
 }
 header ul.member-actions li{display:inline}
 header ul.member-actions li a{color:#000000}
-header ul.member-actions li a:hover{color:#e8ca6f}
+header ul.member-actions li a:hover{color:#d3b56a}
 header .header-nav{display:inline-block}
 header .member-actions{
     position:absolute;
@@ -212,7 +214,7 @@ header .member-actions{
 }
 .share-bar{margin-top:20px}
 .intro span.icon{
-    font-size:40px;color:#e8ca6f;font-weight:bold
+    font-size:40px;color:#d3b56a;font-weight:bold
 }
 .intro-icon{
     display:inline-block;vertical-align:top;padding:6px 0 0 0;margin-right:20px;width:40px
@@ -231,7 +233,7 @@ header .member-actions{
 }
 .features{position:relative}.features p{margin-bottom:0;padding-bottom:0}
 .features h3{margin:0 0 20px 0}
-.features span.icon{font-size:35px;color:#e8ca6f;font-weight:bold}
+.features span.icon{font-size:35px;color:#d3b56a;font-weight:bold}
 .features .feature-icon{display:inline-block;vertical-align:top;padding:6px 0 0 0;margin-right:20px;width:35px}
 .features .feature-content{display:inline-block;width:75%}
 .features .intro-icon{display:inline-block;vertical-align:top;padding:6px 0 0 0;margin-right:20px}
@@ -277,7 +279,7 @@ header .member-actions{
 }
 #btn-show-content{padding:20px;background:#fff;cursor:pointer;display:inline-block;-webkit-transition:opacity 0.5s, visibility 0.6s, margin-top 0.5s;transition:opacity 0.5s, visibility 0.6s, margin-top 0.5s}.toggle-map-content{opacity:0;visibility:hidden}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}
 .rsvp{padding-bottom:40px}
-.rsvp .rsvp-form .rsvp-btn{padding:15px 0;border-radius:3px;width:100%;font-size:13px}.rsvp .rsvp-form .form-input-group{width:100%;height:55px;margin:0 auto 10px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;border:solid 1px #E6E9EA;text-align:left;position:relative}.rsvp .rsvp-form .form-input-group i{color:#e8ca6f;font-size:14px}.rsvp .rsvp-form .form-input-group i:after{content:"";height:30px;width:1px;border-right:solid 1px #E6E9EA;position:absolute;top:50%;left:30px;transform:translateY(-50%)}
+.rsvp .rsvp-form .rsvp-btn{padding:15px 0;border-radius:3px;width:100%;font-size:13px}.rsvp .rsvp-form .form-input-group{width:100%;height:55px;margin:0 auto 10px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;border:solid 1px #E6E9EA;text-align:left;position:relative}.rsvp .rsvp-form .form-input-group i{color:#d3b56a;font-size:14px}.rsvp .rsvp-form .form-input-group i:after{content:"";height:30px;width:1px;border-right:solid 1px #E6E9EA;position:absolute;top:50%;left:30px;transform:translateY(-50%)}
 .rsvp .rsvp-form .form-input-group i.fa-user,.rsvp .rsvp-form .form-input-group i.fa-users,.rsvp .rsvp-form .form-input-group i.fa-envelope,.rsvp .rsvp-form .form-input-group .fa-key{font-size:14px;position:absolute;top:50%;transform:translateY(-50%);margin-left:20px}
 .rsvp .rsvp-form .form-input-group input{padding-left:68px;width:100%;height:100%;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;border:none}
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder{color:#BCC1C3}
