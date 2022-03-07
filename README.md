@@ -12,3 +12,5 @@ terraform run
 ### Uploading static files to S3 ###
 
 aws s3 cp website/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+
+[![CodeScene System Mastery](https://codescene.io/projects/24272/status-badges/system-mastery)](https://codescene.io/projects/24272)
